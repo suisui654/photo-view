@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>photo view</title>
+
+    <!-- jquery -->
+    <script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- jsrender -->
+    <script type="text/javascript" src="./node_modules/jsrender/jsrender.min.js"></script>
+    <!-- isotope -->
+    <script src="./node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
+</head>
+
+<body>
+  <div id="main">aaa</div>
+</body>
+
+</html>
+
+<script id="main_tmpl" type="text/x-jsrender">
+  <div id="content">
+    {{for response_deta}}
+      <img class="photo_item" style='max-width:300px;' src="{{:}}">
+    {{/for}}
+  </div>
+</script>
+
+<script type="text/javascript">
+
+  $(function() {
+
+    $.ajax({
+        url: './directory_img_get.php',
+        type: 'GET',
+        dataType: 'json',
+        contentType: 'application/json',
+    }).done(function(response){
+
+        $("#main").html(
+          $("#main_tmpl").render(response)
+        );
+        setTimeout( function(){
+          $('#content').isotope();
+        }, 500);
+        
+    }).fail(function(){ 
+    });
+
+  });
+</script>
