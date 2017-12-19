@@ -11,6 +11,10 @@
     <script type="text/javascript" src="./node_modules/jsrender/jsrender.min.js"></script>
     <!-- isotope -->
     <script src="./node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <!-- lightbox2 -->
+    <link rel="stylesheet" href="./node_modules/lightbox2/dist/css/lightbox.min.css">
+    <script src="./node_modules/lightbox2/dist/js/lightbox.min.js"></script>
+
 </head>
 
 <body>
@@ -22,7 +26,9 @@
 <script id="main_tmpl" type="text/x-jsrender">
   <div id="content">
     {{for response_deta}}
-      <img class="photo_item" style='max-width:300px;' src="{{:}}">
+      <a href="{{:}}" rel="lightbox[group]">
+        <img class="photo_item" style='max-width:300px;' src="{{:}}">
+      </a>
     {{/for}}
   </div>
 </script>
