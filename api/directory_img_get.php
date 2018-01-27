@@ -1,13 +1,13 @@
 <?php
 // ディレクトリのパスを指定する
-$dir = "./img/" ;
+$dir = "../img/" ;
 // 画像のパスを入れる配列
 $img_array = array();
 if( is_dir( $dir ) && $handle = opendir( $dir ) ) {
 	$path = "";
 	while( ($file = readdir($handle)) !== false ) {
 
-		$path = $dir . $file;
+		$path = "./img/" . $file;
 		$path_info = pathinfo( $path );
 
 		//画像ファイルかチェックする
