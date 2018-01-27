@@ -33,11 +33,20 @@
   </div>
 </script>
 
+<script id="pint_tmpl" type="text/x-jsrender">
+  <div id="content">
+    {{for response_data}}
+      <div>{{:description}}</div>
+    {{/for}}
+  </div>
+</script>
+
+
 <script type="text/javascript">
 
   $(function() {
 
-    $.ajax({
+/*    $.ajax({
         url: './api/directory_img_get.php',
         type: 'GET',
         dataType: 'json',
@@ -46,6 +55,27 @@
 
         $("#main").html(
           $("#main_tmpl").render(response)
+        );
+        setTimeout( function(){
+          $('#content').isotope();
+        }, 500);
+        
+    }).fail(function(){ 
+    });
+  });*/
+
+
+    $.ajax({
+        url: './api/pinterest_img_get.php?pint_user=suisui654',
+        type: 'GET',
+        dataType: 'json',
+        contentType: 'application/json',
+    }).done(function(response){
+
+        console.log(response);
+
+        $("#main").html(
+          $("#pint_tmpl").render(response)
         );
         setTimeout( function(){
           $('#content').isotope();
