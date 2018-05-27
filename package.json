@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "isotope-layout": "^3.0.4",
-    "jquery": "^3.2.1",
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.3.1",
     "jsrender": "^0.9.90",
     "lightbox2": "^2.10.0"
   },
   "devDependencies": {
-    "yarn": "^1.3.2"
+    "yarn": "^1.7.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

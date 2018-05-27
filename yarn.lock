@@ -32,9 +32,9 @@ isarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
 
-isotope-layout@^3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/isotope-layout/-/isotope-layout-3.0.4.tgz#f3ed8d15f8cfb3850b11777f1ca76e0a8bb5b73a"
+isotope-layout@^3.0.6:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/isotope-layout/-/isotope-layout-3.0.6.tgz#d5636ec74d68e7e88fa5166fe6396858db00f432"
   dependencies:
     desandro-matches-selector "^2.0.0"
     fizzy-ui-utils "^2.0.4"
@@ -42,12 +42,12 @@ isotope-layout@^3.0.4:
     masonry-layout "^4.1.0"
     outlayer "^2.1.0"
 
-jquery@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.2.1.tgz#5c4d9de652af6cd0a770154a631bba12b015c787"
+jquery@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
 
 jsrender@^0.9.90:
-  version v0.9.90
+  version "0.9.90"
   resolved "https://registry.yarnpkg.com/jsrender/-/jsrender-0.9.90.tgz#be17d6bfb031c5541a604fd2bda88b4271b53ef5"
   dependencies:
     through2 "^2.0.0"
@@ -112,6 +112,6 @@ xtend@~4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
 
-yarn@^1.3.2:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.3.2.tgz#5939762581b5b4ddcd3418c0f6be42df3aee195f"
+yarn@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.7.0.tgz#0076b9fde6010e01950526a609bc53bc175ef925"
